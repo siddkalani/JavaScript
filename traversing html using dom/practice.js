@@ -17,3 +17,10 @@ const createTable = () =>{
    tbl.setAttribute("border","2");
    
 }
+
+
+const ice = document.createElement("div")
+const text = document.createTextNode("hello")
+document.body.appendChild(ice)
+ice.appendChild(text)
+console.log(ice)
