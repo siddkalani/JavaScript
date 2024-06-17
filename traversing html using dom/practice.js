@@ -1,40 +1,45 @@
-// const createTable = () =>{
-//     // creating table
-//    const tbl = document.createElement("table")
+// const fruits = [3,5,2,4,8]
+// const all = fruits.some(function2)
 
-//    for(i=0;i<2;i++){
-//     const tblHead = document.createElement("th")
+// // converts array index to string
+// const string = Array.from("ABCDEF")
+// console.log(string)
 
-//     for(j=0;j<2;j++){
-//         const row = document.createElement("tr")
-//         const text = document.createTextNode(`this is row ${i}`)
-//         row.appendChild(text)
-//         tblHead.appendChild(row)
-//        }
-//        tbl.appendChild(tblHead)
-//    }
-//    document.body.appendChild(tbl)
-//    tbl.setAttribute("border","2");
-   
+// function function2(value){
+//    return value > 2
 // }
+// console.log(all)
 
 
-// const ice = document.createElement("div")
-// const text = document.createTextNode("hello")
-// document.body.appendChild(ice)
-// ice.appendChild(text)
-// console.log(ice)
+// //.entries() and .keys()
+// const entry = fruits.entries()
+// var sum = ""
+// for(let x of entry){
+//    sum += x + "    "
+// }
+// console.log(sum)
 
 
-const fetchFunction = (id , cb) => {
-    fetch(`https://pokeapi.co/api/v2/pokemon/${id}`)
-    .then(res => res.json())
-    .then(data =>{
-        cb(data)
-    })
+// //spread operator
+// const arr1 = ["hero" , "marvel"]
+// const arr2 = ["lol ", "ji"]
+// const arr3 = ["bahubali" , "mehu"]
+// const newArr = [...arr1,...arr2,...arr3]
+// console.log(newArr)
 
+// //.indexOf
+// const indexof = arr1.indexOf("marvel")
+// console.log(`postion is : ${indexof + 1}`)
+// // same as lastindexOf
+
+// //.include("")
+// const include = arr1.includes("hero")
+// console.log(include)
+
+const nums = [2,4,12,14]
+const filter = nums.filter(function5)
+
+function function5(){
+    return nums > 2
 }
-
-fetchFunction(56 , (pokemon) =>{
-    console.log(pokemon)
-})
+console.log(filter)
