@@ -1,1 +1,1 @@
-indexof+1
+        ...value,
