@@ -126,10 +126,108 @@ const numbers = [
 // numericals.forEach()
 
 
- 
-const obj = {
-                name: "sidd",
-                age: 20,
-            }
 
-            console.log(Object.keys(obj).length)
+// const obj = {
+//                 name: "sidd",
+//                 age: 20,
+//             }
+
+//             console.log(Object.keys(obj).length)
+
+//displaying any items problem 1
+
+// function displayInformation() {
+//     library.map((items)=>{
+//       items.readingStatus === true ? console.log(`Already read '${items.title}' by The Road Ahead.`) : console.log(`You still need to read '${items.title}' by ${items.author}.`)
+//     })
+
+// } 
+
+// // tail starts here
+// var library = [ 
+//    {
+//        title: 'Bill Gates',
+//        author: 'The Road Ahead',
+//        readingStatus: true
+//    },
+//    {
+//        title: 'Steve Jobs',
+//        author: 'Walter Isaacson',
+//        readingStatus: true
+//    },
+//    {
+//        title: 'Mockingjay: The Final Book of The Hunger Games',
+//        author: 'Suzanne Collins',
+//        readingStatus: false
+//    }
+// ];
+
+// displayInformation();
+
+
+//sorting an array
+
+
+
+// tail starts here
+
+// function sortLibrary() {
+
+//     library.sort(function(a,b) {
+//     if(a.title < b.title){
+//      return -1
+//     }
+//     if(a.title > b.title){
+//      return 1
+//     }
+//     return 0;
+//  });
+//     console.log(library)
+// }
+
+// // tail starts here
+// var library = [
+//     {
+//         author: 'Bill Gates',
+//         title: 'The Road Ahead',
+//         libraryID: 1254
+//     },
+//     {
+//         author: 'Steve Jobs',
+//         title: 'Walter Isaacson',
+//         libraryID: 4264
+//     },
+//     {
+//         author: 'Suzanne Collins',
+//         title: 'Mockingjay: The Final Book of The Hunger Games',
+//         libraryID: 3245
+//     }
+// ];
+
+// sortLibrary();
+
+
+// finding second largest no. in an array
+
+// taking input
+
+const readline = require('readline').createInterface({
+    input: process.stdin,
+    output: process.stdout
+  });
+  
+  readline.question('enter your number with commas: ', number => {
+
+    //converting input to array of numbers
+    console.log(number)
+    const numInput = number.trim().split(',').map(Number)
+    console.log(numInput)
+    
+    numInput.sort((a,b)=> b-a)
+    console.log(numInput[1])
+
+
+    readline.close();
+  });
+
+
